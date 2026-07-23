@@ -5,6 +5,6 @@ import ir.moke.microfox.api.job.Task
 class HelloJob implements Task {
     @Override
     void run() {
-        println "Job Executed"
+        println "Job V2 Executed"
     }
 }
