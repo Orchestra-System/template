@@ -3,15 +3,15 @@ package orchestra
 import com.sample.HelloJob
 import com.sample.HelloWorldResources
 import ir.moke.microfox.api.http.HttpMethod
-import ir.moke.orchestra.api.*
-import ir.moke.orchestra.api.annotation.JobRegistry
-import ir.moke.orchestra.api.annotation.JpaItem
-import ir.moke.orchestra.api.annotation.JpaRegistry
+import ir.moke.orchestra.api.IModule
+import ir.moke.orchestra.api.Orchestra
+import ir.moke.orchestra.api.annotation.Job
+import ir.moke.orchestra.api.annotation.Jpa
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-@JpaRegistry(@JpaItem(value = Environment.DS_POSTGRESQL, entityPackages = "com.sample.entity"))
-@JobRegistry(HelloJob)
+@Jpa(value = Environment.DS_POSTGRESQL, entityPackages = "com.sample.entity")
+@Job(HelloJob)
 class Module implements IModule {
     private static final Logger logger = LoggerFactory.getLogger(Module)
 
