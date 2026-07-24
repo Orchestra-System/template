@@ -4,6 +4,9 @@ import com.sample.HelloJob
 import com.sample.HelloWorldResources
 import ir.moke.microfox.api.http.HttpMethod
 import ir.moke.orchestra.api.*
+import ir.moke.orchestra.api.annotation.JobRegistry
+import ir.moke.orchestra.api.annotation.JpaItem
+import ir.moke.orchestra.api.annotation.JpaRegistry
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
