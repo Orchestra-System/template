@@ -1,6 +1,6 @@
 package com.sample
 
-import ir.moke.microfox.api.job.Task
+import ir.moke.orchestra.api.Task
 
 class HelloJob implements Task {
     @Override
