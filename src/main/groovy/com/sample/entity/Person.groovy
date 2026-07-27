@@ -7,7 +7,7 @@ import jakarta.persistence.*
 @Table(name = "person")
 class Person {
     @Id
-    @SequenceGenerator(name = "person_seq", sequenceName = "default_seq", allocationSize = 1)
+    @SequenceGenerator(name = "default_seq", sequenceName = "person_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_seq")
     Long id
     String name
