@@ -1,12 +1,11 @@
 package com.sample
 
 import com.sample.service.PersonService
+import ir.moke.orchestra.api.ModuleLogger
 import ir.moke.orchestra.api.Task
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
 
 class HelloJob implements Task {
-    private static final Logger logger = LoggerFactory.getLogger(HelloJob)
+    private static final ModuleLogger logger = ModuleLogger.getLogger(HelloJob)
 
     @Override
     void run() {
