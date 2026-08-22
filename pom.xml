@@ -17,14 +17,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- MicroFox API -->
-        <dependency>
-            <groupId>ir.moke.microfox</groupId>
-            <artifactId>microfox-api</artifactId>
-            <version>0.9.0</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- Groovy -->
         <dependency>
             <groupId>org.apache.groovy</groupId>
