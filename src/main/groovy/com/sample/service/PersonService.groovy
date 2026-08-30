@@ -8,11 +8,18 @@ class PersonService {
     private static final ModuleLogger logger = ModuleLogger.getLogger(PersonService)
     private static final OptionalRepository<Person> repo = OptionalRepository.of(Person)
 
-    static def savePerson() {
+    static Person savePerson(String name) {
         Person p = new Person()
-        p.name = "Mahdi"
-        p.family = "Sheikh Hosseini"
+        p.name = name
         repo.save(p)
-        logger.info("Save Person")
+        logger.info("Save Person {}", name)
+
+        return p
+    }
+
+    static def removePerson(long id) {
+        def person = repo.find(id)
+        if (person != null) repo.remove(person)
+        logger.info("Remove Person {}", id)
     }
 }
