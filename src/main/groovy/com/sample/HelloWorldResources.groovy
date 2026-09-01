@@ -9,7 +9,9 @@ import ir.moke.microfox.api.http.annotation.Path
 import ir.moke.microfox.api.http.annotation.PathParam
 import ir.moke.microfox.api.http.annotation.QueryParam
 import ir.moke.orchestra.api.ModuleLogger
+import ir.moke.orchestra.api.annotation.Rest
 
+@Rest
 @Path("/api")
 class HelloWorldResources {
     private static final ModuleLogger logger = ModuleLogger.getLogger(HelloWorldResources)
