@@ -7,22 +7,14 @@
     <name>template-modules</name>
 
     <url>https://github.com/Orchestra-System/template</url>
-    <dependencies>
 
+    <dependencies>
         <!-- Orchestra API -->
         <dependency>
             <groupId>ir.moke.orchestra</groupId>
             <artifactId>orchestra-api</artifactId>
             <version>0.1</version>
             <scope>provided</scope>
-        </dependency>
-
-        <!-- Test -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>6.0.3</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
